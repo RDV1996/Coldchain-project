@@ -3,6 +3,7 @@ Dit bestand geeft aanvullende informatie over de 4 verschillende bestanden in de
 
 
 # model.cto:
+![model.cto](images/.cto.png "model.cto")
 
 Dit bestand bouwt het model van de blockchain.
 De 3 belangrijkste delen in een blockchain zijn deelnemers, activa en transacties.
@@ -15,6 +16,7 @@ Eindelijk hebben we 5 transactietypen. Met deze transacties kunnen we de activa 
 
 
 # script.js:
+![script.js](images/.js.png "script.js")
 
 Dit bestand beschrijft de interne functies van de blockchain.
 Om de werkbelasting van de backend-ontwikkeling van ons project te verlagen, hebben we functies in de blockchain toegevoegd die het aanmaken van nieuwe assets automatiseren en vereenvoudigen. Dit betekent echter wel dat er extra transacties zijn om de activa te creëren.
@@ -29,6 +31,7 @@ In dit bestand vinden we 6 functies.
 
 
 # querries.qry:
+![querries.qry](images/.qry.png "querries.qry")
 
 Dit bestand creëert vragen om het zoeken van gegevens in de blockchain gemakkelijker te maken.
 Het bevat veel vragen, elk met hun eigen functie.
@@ -40,6 +43,7 @@ Er zijn 3 hoofdtypen van querries:
 
 
 # permissions.acl:
+![permissions.acl](images/.acl.png "permissions.acl")
 
 Dit bestand geeft toegang tot de verschillende deelnemers aan de blockchain.
 Dit was niet opgenomen in dit prototype voor een coldchain hyperledger en is dus beperkt om voor iedereen toegankelijk te zijn.
