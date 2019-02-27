@@ -2,29 +2,29 @@
 
 ### 1. Background of the project
 
-	This is a project in collaboration with Ordina. Ordina is the largest independent ICT service provider of the BeNeLux. Ordina is a consultancy company with throughout the BeNeLux nearly 3390 employees. The expertise of these eployees is to business processes and ICT sustainable improvement.  
-	  
-	This project is all about monitoring a Cold Chain, this is a supply chain for cold products. Currently a lot is measured by hand but these measurements can only be performed before and / or after transport. The fluctuations in temperature during transport can therefore not be tracked. That the fluctuations during the transport can not be tracked is a problem. It is not immediately clear where something has gone wrong and therefore it is more difficult to indicate the person responsible for this.  
-	A second point about why the current system is a problem, is that these goods must be kept cool for a reason. This concerns nutrition, medication, blood bags and so on. As a consumer (or patient in the case of medication or blood bags) you still want the guarantee that everything is healthy.  
-	  
-	So basicly product will me monitored constantly by sensors during the transport to detect fluctuations. The sensors pass on their data to an application that will save and visualize the data. If something then goes wrong (eg the temperature is too high), you'll be able to be notified via the platform.  
-	  
-	The main goal of this project is for Ordina to get a better insight into Blockchain and the usablility of it. In this case we'll be using the Blockchain as a basic database and see how it performs.
+Dit is een project in samenwerking met Ordina. Ordina is de grootste onafhankelijke ICT-dienstverlener van de BeNeLux. Ordina is een consultancybedrijf met in de hele BeNeLux bijna 3390 medewerkers. De expertise van deze eployees is voor bedrijfsprocessen en duurzame verbetering van ICT.
+
+Dit project gaat over het monitoren van een koude keten, dit is een supply chain voor koude producten. Momenteel wordt veel met de hand gemeten, maar deze metingen kunnen alleen voor en / of na het transport worden uitgevoerd. De fluctuaties in temperatuur tijdens transport kunnen daarom niet worden gevolgd. Dat de fluctuaties tijdens het transport niet kunnen worden gevolgd, is een probleem. Het is niet meteen duidelijk waar iets verkeerd is gegaan en daarom is het moeilijker om de verantwoordelijke persoon aan te duiden.
+Een tweede punt waarom het huidige systeem een ​​probleem is, is dat deze goederen om een ​​reden koel moeten blijven. Dit betreft voeding, medicijnen, bloedzakken enzovoort. Als consument (of patiënt in het geval van medicijnen of bloedzakken) wil je toch de garantie dat alles gezond is.
+
+Dus in principe zal het product me constant gevolgd worden door sensoren tijdens het transport om fluctuaties te detecteren. De sensoren geven hun gegevens door aan een applicatie die de gegevens opslaat en visualiseert. Als er dan iets fout gaat (bijvoorbeeld als de temperatuur te hoog is), kunt u via het platform op de hoogte worden gebracht.
+
+Het belangrijkste doel van dit project is om Ordina een beter inzicht te geven in Blockchain en de bruikbaarheid ervan. In dit geval gebruiken we de Blockchain als een basisdatabase en kijken we hoe deze werkt.
 	
 1. Research van Blockchain  
-1. Plan Van Aanpak
+1. Plan van Aanpak
 1. Realisatie
-	1. Infrastructuur
+	- Infrastructuur
 		* Java API op Beanstalk
 		* Blochchain hosting
 		* Web app hosting
-	1. Blockchain
+	- Blockchain
 		* Model
 		* Functions
 		* Querrying
-	1. API
+	- API
 		* Sample data generator
 		* Functionaliteiten	
-	1. Front-end
+	- Front-end
 		* Opmaak framework
 		* Visualisatie
