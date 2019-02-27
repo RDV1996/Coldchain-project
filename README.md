@@ -43,7 +43,7 @@ Er zijn 3 hoofdtypen van querries:
 
 
 # permissions.acl:
-![permissions.acl](.acl.png "permissions.acl")
+![permissions.acl](images/.acl.png "permissions.acl")
 
 Dit bestand geeft toegang tot de verschillende deelnemers aan de blockchain.
 Dit was niet opgenomen in dit prototype voor een coldchain hyperledger en is dus beperkt om voor iedereen toegankelijk te zijn.
