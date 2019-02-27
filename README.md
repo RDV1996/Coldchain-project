@@ -131,7 +131,7 @@ Ga naar de S3 pagina.
 [https://s3.console.aws.amazon.com](https://s3.console.aws.amazon.com "S3")
 
 
-![s3-selectie](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/s3-selectie.png "s3-selectie")
+![s3-selectie](afbeeldingen/s3-selectie.png "s3-selectie")
 
 Klik op de "create bucket" knop.
 
