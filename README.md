@@ -12,25 +12,25 @@ Wij huren er een op de cloud van amazon, het is ook mogelijk er zelf een te inst
 Log in met je aws account en ga naar de EC2 pagina.
 
 
-![aws-pagina](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/aws-pagina.png "aws-pagina")
+![aws-pagina](afbeeldingen/aws-pagina.png "aws-pagina")
 
 Klik vervolgens op de Launch Instance knop om de instance creatie wizard te starten.
 
-![aws-pagina](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/launch-instance.png "aws-pagina")
+![aws-pagina](afbeeldingen/launch-instance.png "aws-pagina")
 
 Kies voor een Amazon Linux 2 AMI. 
 
-![aws-pagina](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/ubuntu-selectie.png "aws-pagina")
+![aws-pagina](afbeeldingen/ubuntu-selectie.png "aws-pagina")
 
 Er is een minimum van **4gb** vrij geheugen nodig om de Hyperledger Composer en hyperledger Fabric te draaien. Hierdoor hebben we een t2.medium instance type nodig.
 
-![aws-pagina](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/t2.medium-selectie.png "aws-pagina")
+![aws-pagina](afbeeldingen/t2.medium-selectie.png "aws-pagina")
 
 Hierna gaan we naar stap 4 "Add storage".
 
 We geven de instance 20 Gb aan storage i.p.v. 8 Gb.
 
-![aws-pagina](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/storage-keuze.png "aws-pagina")
+![aws-pagina](afbeeldingen/storage-keuze.png "aws-pagina")
 
 Ten laatste gaan we naar stap 6 om de security group aan te passen.
 
@@ -39,7 +39,7 @@ Voeg volgende regels toe:
 * poort 3000: Hyperledger fabric api poort
 * Poort 8080: Hyperledger composer poort
 
-![security-group](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/security-group.png "security-group")
+![security-group](afbeeldingen/security-group.png "security-group")
 
 Indien men nu op "launch" klikt, start er een instance op met de juiste instellingen om de installatie van de hyperledger composer te starten.
 
@@ -61,7 +61,7 @@ composer-playground &
 ```
 Browse naar het ip van je instance op poort 8080. Je komt uit op het volgende scherm:
 
-![hyper-scherm](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/hyper-scherm.png "hyper-scherm]")
+![hyper-scherm](afbeeldingen/hyper-scherm.png "hyper-scherm]")
 
 Klik op "Deploy a new business network" en upload het .bna file.
 Hierna moet je de default credentials opgeven en "admin@ordina-coldchain-hyperledger" ingeven als network admin card. Klik op deploy.
@@ -97,28 +97,28 @@ cd ~/fabric-dev-servers
 We hebben een relationele database nodig om alle gebruikers data zoals gebruikersnaam en paswoord in op te slaan.
 
 Ga naar de amazon RDS pagina.
-![rds-pagina-keuze](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/rds-pagina-keuze.png "rds-pagina-keuze")
+![rds-pagina-keuze](afbeeldingen/rds-pagina-keuze.png "rds-pagina-keuze")
 
 We hebben een nieuwe databank nodig, dus klikken we op de "create database" knop.
 
-![create-datababe-keuze](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/create-datababe-keuze.png "create-datababe-keuze")
+![create-datababe-keuze](afbeeldingen/create-datababe-keuze.png "create-datababe-keuze")
 
 We kunnen kiezen tussen een aantal databank engines. Kies voor MySql en ga naar de volgende pagina.
 
-![selectie-mysql](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/selectie-mysql.png "selectie-mysql")
+![selectie-mysql](afbeeldingen/selectie-mysql.png "selectie-mysql")
 
 Kies voor de tweede optie "Production -MySql"
 
-![rds-prod-keuze](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/rds-prod-keuze.png "rds-prod-keuze")
+![rds-prod-keuze](afbeeldingen/rds-prod-keuze.png "rds-prod-keuze")
 
 Neem onderstaande opties over. Geef de databank een gepaste naam en credentials. Klik next.
 
-![rds-instellingen](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/rds-instellingen.png "rds-instellingen")
+![rds-instellingen](afbeeldingen/rds-instellingen.png "rds-instellingen")
 
 Ten laatste zet je de databank publiek open. Klik deploy.
 De databank wordt opgezet en is over een 10 tal minuten klaar.
 
-![rds-klaar](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/rds-klaar.png "rds-klaar")
+![rds-klaar](afbeeldingen/rds-klaar.png "rds-klaar")
 
 
 ## Online zetten van front-end
@@ -135,33 +135,33 @@ Ga naar de S3 pagina.
 
 Klik op de "create bucket" knop.
 
-![selectie-create-bucket](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/selectie-create-bucket.png "selectie-create-bucket")
+![selectie-create-bucket](afbeeldingen/selectie-create-bucket.png "selectie-create-bucket")
 
 Je krijgt een popup scherm met de s3 wizard te zien.
 
 Geef je bucket een duidelijke en korte naam en kies je gewenste region. Klik next tot de wizard is afgesloten.
 
-![s3-wizard-1](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/s3-wizard-1.png "s3-wizard-1")
+![s3-wizard-1](afbeeldingen/s3-wizard-1.png "s3-wizard-1")
 
 Indien alles correct is verlopen, kan je nu je s3 bucket zien in de lijst. Klik op de bucket.
 
-![s3-bucket-zichtbaar](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/s3-bucket-zichtbaar.png "s3-bucket-zichtbaar")
+![s3-bucket-zichtbaar](afbeeldingen/s3-bucket-zichtbaar.png "s3-bucket-zichtbaar")
 
 Je krijg een overview van je buckcet te zien. Klik op de upload knop en upload je angular project. Klik next en behouw alle standaard opties tot de wizard is afgesloten.
 
-![s3-upload](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/s3-upload.png "s3-upload")
+![s3-upload](afbeeldingen/s3-upload.png "s3-upload")
 
 Vervolens wordt je project geupload op je s3 bucket.
 
-![s3-uploaded](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/s3-uploaded.png "s3-uploaded")
+![s3-uploaded](afbeeldingen/s3-uploaded.png "s3-uploaded")
 
 Als laatste stap moeten we naar de "Properties" tab gaan. Klik op de "Static website hosting" block en selecteer de eerste optie "Use this bucket to host a website". Klik op save.
 
-![s3-static-hosting](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/s3-static-hosting.png "s3-static-hosting")
+![s3-static-hosting](afbeeldingen/s3-static-hosting.png "s3-static-hosting")
 
 Indien alles succesvol is verlopen zou je nu je project kunnen zien via de opgegeven link.
 
-![s3-website-af](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/s3-website-af.png "s3-website-af")
+![s3-website-af](afbeeldingen/s3-website-af.png "s3-website-af")
 
 #Java springboot installatie
 
@@ -170,31 +170,31 @@ Ga naar de elastic beanstalk pagina.
 
 [https://eu-west-3.console.aws.amazon.com/elasticbeanstalk/](https://eu-west-3.console.aws.amazon.com/elasticbeanstalk/ "Elastic beanstalk")
 
-![beanstalk-select](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/beanstalk-select.png "beanstalk-select")
+![beanstalk-select](afbeeldingen/beanstalk-select.png "beanstalk-select")
 
 Klik op de "Create New Application" knop. 
 
-![beanstalk-select-new-app](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/beanstalk-select-new-app.png "beanstalk-select-new-app")
+![beanstalk-select-new-app](afbeeldingen/beanstalk-select-new-app.png "beanstalk-select-new-app")
 
 Geef vervolgens een gepaste naam op en klik op create.
 Momenteel heeft onze applicatie nog geen environment deze maken we nu aan. Maak een environment aan via de "create environment" knop.
 
-![beanstalk-select-create-env](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/beanstalk-select-create-env.png "beanstalk-select-create-env")
+![beanstalk-select-create-env](afbeeldingen/beanstalk-select-create-env.png "beanstalk-select-create-env")
 
 Laat de standaard optie geselecteerd staan en klik select.
 
-![beanstalk-select-tier](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/beanstalk-select-tier.png "beanstalk-select-tier")
+![beanstalk-select-tier](afbeeldingen/beanstalk-select-tier.png "beanstalk-select-tier")
 
 Je krijgt de instellingen pagina van je environment te zien. Geef hier je gewenste opties in, maar zet het platform zeker op Java.
 Selecteer hierna de "upload your code" optie en klik op de upload knop. Geef vervolgens je .jar file op. 
 
-![beanstalk-env-opties](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/beanstalk-env-opties.png "beanstalk-env-opties")
+![beanstalk-env-opties](afbeeldingen/beanstalk-env-opties.png "beanstalk-env-opties")
 
 Klik op deploy.
 
-![beanstalk-deploy](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/beanstalk-deploy.png "beanstalk-deploy")
+![beanstalk-deploy](afbeeldingen/beanstalk-deploy.png "beanstalk-deploy")
 
 Een paar minuten later zal je applicatie online staan.
 
-![beanstalk-af](https://bitbucket.org/ChainReact/cold-chain-project/raw/0420d8cdf6601602df9cb8bb9b9d6e762a0c8da8/afbeeldingen/beanstalk-af.png "beanstalk-af")
+![beanstalk-af](afbeeldingen/beanstalk-af.png "beanstalk-af")
 
