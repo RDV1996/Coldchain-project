@@ -30,7 +30,7 @@ In dit bestand vinden we 6 functies.
 1. Met de ThedenialContract-functie kunnen ontvangers een verzonden verzending weigeren. Eerst wordt gecontroleerd of een contract momenteel actief is onder de gegeven DevEUI. Als er een contract is, wordt de reden voor de weigering opgegeven en wordt de status gewijzigd in ONWETEND.
 
 
-# querries.qry:
+# queies.qry:
 ![querries.qry](images/.qry.png "querries.qry")
 
 Dit bestand creëert vragen om het zoeken van gegevens in de blockchain gemakkelijker te maken.
