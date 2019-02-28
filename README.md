@@ -1,5 +1,11 @@
+![Hyperledger](https://github.com/RDV1996/Coldchain-project/blob/Blockchain/images/hyperledger_logo_new.png "Hyperledger Logo")
+
 ## Dit is het readme-bestand voor de Ordina Coldchain Hyperledger.
 Dit bestand geeft aanvullende informatie over de 4 verschillende bestanden in deze samengestelde bna.
+
+De volledige Hyperledger is gemaakt met Fabric.
+
+![Hyperledger_Fabric](https://github.com/RDV1996/Coldchain-project/blob/Blockchain/images/Hyperledger_fabric.png "Hyperledger Fabric")
 
 
 # model.cto:
