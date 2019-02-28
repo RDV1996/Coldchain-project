@@ -1,4 +1,4 @@
-![Front-End Technologies](repo-images/front-end.png "Front-End Technologies")
+![Front-End Technologies](https://raw.githubusercontent.com/RDV1996/Coldchain-project/Front-End/repo-images/front-end.png "Front-End Technologies")
 # Opmaak Framework
 Bij het maken van de webapplicatie is er gebruik gemaakt van Angular 7 in combinatie met Bootstrap 4.7.0 Daarbij aanvullend is er gebruik gemaakt van MDBootstrap en NGBootstrap, om pre-defined componenten tot onze beschikking te hebben die het werk zouden verzachten.
 
