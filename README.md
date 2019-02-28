@@ -43,7 +43,7 @@ Voeg volgende regels toe:
 
 Indien men nu op "launch" klikt, start er een instance op met de juiste instellingen om de installatie van de hyperledger composer te starten.
 
-##Installatie hyperledger fabric
+## Installatie hyperledger fabric
 
 Voor het installatie process van de hyperledger fabric verwijzen we u door naar de officiele handleiding.
 
@@ -66,14 +66,14 @@ Browse naar het ip van je instance op poort 8080. Je komt uit op het volgende sc
 Klik op "Deploy a new business network" en upload het .bna file.
 Hierna moet je de default credentials opgeven en "admin@ordina-coldchain-hyperledger" ingeven als network admin card. Klik op deploy.
 
-###Hyperledger Composer REST server
+### Hyperledger Composer REST server
 Als volgende stap moet je de "Hyperledger Composer REST server" opzetten. Dit gaat d.m.v. het volgende commando.
 
 ```bash
 sudo composer-rest-server --card admin@ordina-coldchain-hyperledger --namespaces always --port 3000 &
 ```
 
-###Handige scripts
+### Handige scripts
 
 Opstart van de servers:
 
@@ -163,7 +163,7 @@ Indien alles succesvol is verlopen zou je nu je project kunnen zien via de opgeg
 
 ![s3-website-af](https://github.com/RDV1996/Coldchain-project/blob/Infrastructure/afbeeldingen/s3-website-af.png "s3-website-af")
 
-#Java springboot installatie
+# Java springboot installatie
 
 
 Ga naar de elastic beanstalk pagina.
