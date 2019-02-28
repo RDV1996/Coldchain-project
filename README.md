@@ -3,7 +3,7 @@ Dit bestand geeft aanvullende informatie over de 4 verschillende bestanden in de
 
 
 # model.cto:
-![model.cto](images/.cto.png "model.cto")
+![model.cto](https://github.com/RDV1996/Coldchain-project/blob/Blockchain/images/.cto.png "model.cto")
 
 Dit bestand bouwt het model van de blockchain.
 De 3 belangrijkste delen in een blockchain zijn deelnemers, activa en transacties.
@@ -16,7 +16,7 @@ Eindelijk hebben we 5 transactietypen. Met deze transacties kunnen we de activa 
 
 
 # script.js:
-![script.js](images/.js.png "script.js")
+![script.js](https://github.com/RDV1996/Coldchain-project/blob/Blockchain/images/.js.png "script.js")
 
 Dit bestand beschrijft de interne functies van de blockchain.
 Om de werkbelasting van de backend-ontwikkeling van ons project te verlagen, hebben we functies in de blockchain toegevoegd die het aanmaken van nieuwe assets automatiseren en vereenvoudigen. Dit betekent echter wel dat er extra transacties zijn om de activa te creëren.
@@ -30,8 +30,8 @@ In dit bestand vinden we 6 functies.
 1. Met de ThedenialContract-functie kunnen ontvangers een verzonden verzending weigeren. Eerst wordt gecontroleerd of een contract momenteel actief is onder de gegeven DevEUI. Als er een contract is, wordt de reden voor de weigering opgegeven en wordt de status gewijzigd in ONWETEND.
 
 
-# querries.qry:
-![querries.qry](images/.qry.png "querries.qry")
+# queies.qry:
+![querries.qry](https://github.com/RDV1996/Coldchain-project/blob/Blockchain/images/.qry.png "querries.qry")
 
 Dit bestand creëert vragen om het zoeken van gegevens in de blockchain gemakkelijker te maken.
 Het bevat veel vragen, elk met hun eigen functie.
@@ -43,7 +43,7 @@ Er zijn 3 hoofdtypen van querries:
 
 
 # permissions.acl:
-![permissions.acl](images/.acl.png "permissions.acl")
+![permissions.acl](https://github.com/RDV1996/Coldchain-project/blob/Blockchain/images/.acl.png "permissions.acl")
 
 Dit bestand geeft toegang tot de verschillende deelnemers aan de blockchain.
 Dit was niet opgenomen in dit prototype voor een coldchain hyperledger en is dus beperkt om voor iedereen toegankelijk te zijn.
